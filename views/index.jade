@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title GDG SJC - Node.js
+    link(href="/css/index.css", rel="stylesheet" ,type="text/css")
+    link(href="/bootstrap/dist/css/bootstrap.min.css", rel="stylesheet" ,type="text/css")
+  body
+      .container
+        .page-header  
+          .row
+            .col-md-3
+            .col-md-6
+              h1 Node.js Chat
+          .row
+            .col-md-3
+            .col-md-4
+                label(for=user) Apelido
+                input#user.form-control(type='text', placeholder='Nome do usuário', maxlength=10)
+            .col-md-2  
+                label(for=user) Cor
+                input#color.form-control(type='text', placeholder='Cor')
+                  
+        .row
+          .col-md-3
+          .col-md-6
+            .panel.panel-default.panel-body
+              
+                  ul#messages
+        
+        .row
+          .col-md-3
+          .col-md-6
+            label(for=message) Mensagem
+            .input-group
+              input#message.form-control(type='text', placeholder='Digite aqui sua mensagem...')
+              span.input-group-btn
+                button#send.btn.btn-success(type='button') Enviar
+
+    
+    script(type="text/javascript", src="/jquery/dist/jquery.min.js")
+    script(type="text/javascript", src="/bootstrap/dist/js/bootstrap.min.js")
+    script(tyoe="text/javascript", src="/socket.io/socket.io.js")
+    script(type="text/javascript", src="/js/index.js")
+      
+  

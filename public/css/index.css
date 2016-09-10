@@ -1,0 +1,16 @@
+.panel-body{
+  height: 250px;
+  overflow-y: auto !important;
+}
+
+#messages {
+  list-style: none;
+  padding: 5px;
+}
+
+#messages li b{
+  display: inline-block;
+  margin-right: 5px;
+  min-width: 100px;
+  text-align: right;
+}
