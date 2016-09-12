@@ -4,7 +4,8 @@
   "description": "GDG SJC - Workshop Node.js sem Mistério - Semana de tecnologia do Bilac",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,6 @@
   },
   "homepage": "https://github.com/jaimelopesflores/gdg-workshop-nodejs-chat#readme",
   "dependencies": {
-    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "jade": "^1.11.0",
     "socket.io": "^1.4.8"
